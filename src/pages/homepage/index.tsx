@@ -1,22 +1,22 @@
 import { useEffect, useRef, useState } from "react"
 
-const initTasks = [
-   {
-      title: "Cuci Mobil",
-      desc: "jadwal cuci mobil mingguan",
-      isDone: false,
-   },
-   {
-      title: "Cuci Mobil",
-      desc: "jadwal cuci mobil mingguan",
-      isDone: false,
-   },
-   {
-      title: "Cuci Mobil",
-      desc: "jadwal cuci mobil mingguan",
-      isDone: false,
-   },
-]
+// const initTasks = [
+//    {
+//       title: "Cuci Mobil",
+//       desc: "jadwal cuci mobil mingguan",
+//       isDone: false,
+//    },
+//    {
+//       title: "Cuci Mobil",
+//       desc: "jadwal cuci mobil mingguan",
+//       isDone: false,
+//    },
+//    {
+//       title: "Cuci Mobil",
+//       desc: "jadwal cuci mobil mingguan",
+//       isDone: false,
+//    },
+// ]
 
 type TTask = {
    title: string
@@ -25,7 +25,7 @@ type TTask = {
 }
 
 const HomePage = () => {
-   const [taskList, setTaskList] = useState<TTask[]>(initTasks)
+   const [taskList, setTaskList] = useState<TTask[]>([])
 
    const handleToggle = (i: number) => {
       const tmpTasks: TTask[] = []
